@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+body{
+    /* width: 95%;
+    height: 95%; */
+    background-color: rgb(229, 230, 252);
+}
+
+/* Navbar */
+
+.nav {
+  background-color: #302939;
+  color: white;
+  width: 100vw;
+  height: 55px;
+  text-align: start;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Container */
+
+.line{
+  background-color: black;
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background-color: #911d91;
+  transition: width 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10%;
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  /* @media only screen and (max-width: 768px) { */
+    /* For mobile phones: */
+    /* [class*="containerbox"] {
+      width: 100%;
+    }
+  } */
+
+.containerbox {
+  display: grid;
+  grid-template-rows: repeat(3, 16.7vh);
+  grid-template-columns: repeat(3, 16.7vh);
+  width: 50vh;
+  height: 50vh;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+.box1 {
+    margin-top: 2%;
+}
+
+.box1 h2 {
+    color: #302939;
+}
+
+.box {
+    border: 0.15vw solid #50595C;
+    font-size: 35px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* vertical-align: middle; */
+}
+
+/* button */
+
+.button {
+    color: black;
+    width: 80px;
+    height: 1.5rem;
+    background-color: rgb(136, 208, 208);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(34, 227, 227);
+}
+
+.info {
+    color: #511616;
+    font-size: 1.3rem;
+}
+
+.imgbox img{
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.box:hover {
+    background-color: #e4cccc;
+}
+
+/* Border remover */
+
+.br-0 {
+    border-right: 0;
+}.bl-0 {
+    border-left: 0;
+}.bb-0 {
+    border-bottom: 0;
+}.bt-0 {
+    border-top: 0;
+}
+
+/* footer */
+
+.footer {
+    background-color: #302939;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
